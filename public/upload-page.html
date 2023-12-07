@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etec Files - Main Page</title>
+  <link rel="stylesheet" href="../src/pages/upload-page/styles.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href=""><iconify-icon icon="bx:ghost" width="32"></iconify-icon></a>
+    <p>Seja bem-vindo, André!</p>
+    <a href=""><iconify-icon icon="bx:archive-out" width="32"></iconify-icon></a>
+  </header>
+
+  <div class="content">
+    <div class="upload-box">
+      <h1>Insira Abaixo os Seus Arquivos</h1>
+      <form class="form-file" onsubmit="checkData()">
+        <input type="file" id="fileInput" required>
+        <select id="componentes">
+          <option value="">Componente</option>
+          <option value="sw">Sistemas Web</option>
+          <option value="iw">Interface Web</option>
+          <option value="bd">Banco de Dados</option>
+          <option value="dm">Desenvolvimento Mobile</option>
+        </select>
+        <input type="submit" value="Upload">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

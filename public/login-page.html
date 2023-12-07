@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etec Files - Login</title>
+  <link rel="stylesheet" href="/src/pages/login-page/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper">
+    <form id="loginForm" onsubmit="validateLogin()">
+      <h1>Etec Files Login</h1>
+      <div class="input-box">
+        <input id="usernameInput" type="text" placeholder="Usuário" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input id="passwordInput" type="password" placeholder="Senha" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Salvar login</label>
+        <a href="">Esqueceu a Senha</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <!-- Vincula o arquivo JavaScript externo -->
+    <script src="/src/pages/login-page/script.js"></script>
+  </div>
+</body>
+</html>
